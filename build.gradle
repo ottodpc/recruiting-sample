@@ -1,6 +1,6 @@
 plugins {
-	id 'org.springframework.boot' version '2.4.0'
-	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+//	id 'org.springframework.boot' version '2.4.0'
+//	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
 }
 
@@ -13,8 +13,13 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+	implementation group: 'com.google.guava', name: 'guava', version: '30.0-jre'
+
+	testCompile 'org.junit.jupiter:junit-jupiter:5.6.3'
+	testCompile group: 'com.google.truth', name: 'truth', version: '1.1'
+	testCompile group: 'com.google.truth.extensions', name: 'truth-java8-extension', version: '1.1'
 }
 
 test {
