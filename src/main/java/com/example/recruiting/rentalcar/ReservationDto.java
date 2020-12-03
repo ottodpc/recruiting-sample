@@ -14,13 +14,11 @@ public class ReservationDto {
     private BookingStatus bookingStatus;
     private LocalDate reservationDate;
 
-    private LocalDateTime timestamp;
 
-    public ReservationDto(String driverName, BookingStatus bookingStatus, LocalDate reservationDate, LocalDateTime timestamp) {
+    public ReservationDto(String driverName, BookingStatus bookingStatus, LocalDate reservationDate) {
         this.driverName = driverName;
         this.bookingStatus = bookingStatus;
         this.reservationDate = reservationDate;
-        this.timestamp = timestamp;
     }
 
     public enum BookingStatus {
@@ -51,11 +49,4 @@ public class ReservationDto {
         this.reservationDate = reservationDate;
     }
 
-    public LocalDateTime getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(LocalDateTime timestamp) {
-        this.timestamp = timestamp;
-    }
 }
