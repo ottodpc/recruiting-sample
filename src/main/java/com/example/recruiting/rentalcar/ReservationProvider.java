@@ -1,6 +1,5 @@
 package com.example.recruiting.rentalcar;
 
-import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -9,10 +8,7 @@ import java.util.List;
 public class ReservationProvider {
 
 
-
-    public static List<String> getAllDriverNamesWithAValidReservation(LocalDate pickupDay) {
-
-
+    public static List<String> getCurrentValidReservations(List<ReservationDto> reservationEntries) {
         return null;
     }
 }
