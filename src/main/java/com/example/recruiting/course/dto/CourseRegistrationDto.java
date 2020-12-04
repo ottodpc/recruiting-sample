@@ -28,24 +28,11 @@ public class CourseRegistrationDto {
         return courseParticipantName;
     }
 
-    public void setCourseParticipantName(String courseParticipantName) {
-        this.courseParticipantName = courseParticipantName;
-    }
-
-    public RegistrationStatus getBookingStatus() {
+    public RegistrationStatus getRegistrationStatus() {
         return registrationStatus;
-    }
-
-    public void setBookingStatus(RegistrationStatus registrationStatus) {
-        this.registrationStatus = registrationStatus;
     }
 
     public LocalDate getRegistrationDate() {
         return registrationDate;
     }
-
-    public void setRegistrationDate(LocalDate registrationDate) {
-        this.registrationDate = registrationDate;
-    }
-
 }

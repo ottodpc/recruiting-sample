@@ -18,8 +18,8 @@ public class CourseRegistrationHolder {
 
     public static final List<CourseRegistrationDto> REGISTRATIONS = new ArrayList<CourseRegistrationDto>() {{
         add(new CourseRegistrationDto("Carl", ENROLLED, of(2020, 1 ,1)));
-        add(new CourseRegistrationDto("carl", CANCELED ,of(2020, 1 ,2)));
-        add(new CourseRegistrationDto("CARL", ENROLLED, of(2020, 1 ,3)));
+        add(new CourseRegistrationDto("Carl", CANCELED ,of(2020, 1 ,2)));
+        add(new CourseRegistrationDto("Carl", ENROLLED, of(2020, 1 ,3)));
 
         add(new CourseRegistrationDto("Mary", ENROLLED, of(2020, 1 ,1)));
         add(new CourseRegistrationDto("Mary", CANCELED ,of(2020, 1 ,2)));
