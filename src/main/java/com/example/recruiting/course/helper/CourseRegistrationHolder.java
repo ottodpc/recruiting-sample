@@ -7,7 +7,7 @@ import java.util.List;
 
 import static com.example.recruiting.course.dto.CourseRegistrationDto.RegistrationStatus.CANCELED;
 import static com.example.recruiting.course.dto.CourseRegistrationDto.RegistrationStatus.ENROLLED;
-import static java.time.LocalDate.*;
+import static java.time.LocalDate.of;
 
 /**
  * @author juergen.windhaber
@@ -26,5 +26,11 @@ public class CourseRegistrationHolder {
 
         add(new CourseRegistrationDto("Joey", CANCELED ,of(2020, 1 ,1)));
         add(new CourseRegistrationDto("Joey", ENROLLED, of(2020, 1 ,2)));
+
+        add(new CourseRegistrationDto("Bill", CANCELED ,of(2020, 1 ,1)));
+        add(new CourseRegistrationDto("Bill", CANCELED, of(2020, 1 ,2)));
+
+        add(new CourseRegistrationDto("Anne", ENROLLED ,of(2020, 1 ,1)));
+        add(new CourseRegistrationDto("Anne", ENROLLED, of(2020, 1 ,2)));
     }};
 }

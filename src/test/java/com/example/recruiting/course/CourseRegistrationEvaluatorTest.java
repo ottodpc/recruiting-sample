@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static com.google.common.truth.Truth.assertThat;
-import static java.time.LocalDate.of;
 import static java.util.Collections.shuffle;
 
 
@@ -29,7 +28,7 @@ class CourseRegistrationEvaluatorTest {
         List<String> driverNamesWithAValidReservation = CourseRegistrationEvaluator.getAllCurrentValidCourseParticipantNames(registrations);
 
         assertThat(driverNamesWithAValidReservation).isNotNull();
-        assertThat(toUpper(driverNamesWithAValidReservation)).containsExactlyElementsIn(Arrays.asList("CARL", "JOEY"));
+        assertThat(toUpper(driverNamesWithAValidReservation)).containsExactlyElementsIn(Arrays.asList("CARL", "JOEY", "ANNE"));
 
     }
 
