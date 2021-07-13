@@ -25,10 +25,10 @@ class CourseRegistrationEvaluatorTest {
         List<CourseRegistrationDto> registrations = new ArrayList<>(CourseRegistrationHolder.REGISTRATIONS);
         shuffle(registrations);
 
-        List<String> driverNamesWithAValidReservation = CourseRegistrationEvaluator.getAllCurrentValidCourseParticipantNames(registrations);
+        List<String> participantsWithAValidReservation = CourseRegistrationEvaluator.getAllCurrentValidCourseParticipantNames(registrations);
 
-        assertThat(driverNamesWithAValidReservation).isNotNull();
-        assertThat(toUpper(driverNamesWithAValidReservation)).containsExactlyElementsIn(Arrays.asList("CARL", "JOEY", "ANNE"));
+        assertThat(participantsWithAValidReservation).isNotNull();
+        assertThat(toUpper(participantsWithAValidReservation)).containsExactlyElementsIn(Arrays.asList("CARL", "JOEY", "ANNE"));
 
     }
 
