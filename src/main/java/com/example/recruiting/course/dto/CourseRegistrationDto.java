@@ -7,32 +7,12 @@ import java.time.LocalDate;
  *
  * Dto which holds the status of a registration.
  */
-public class CourseRegistrationDto {
 
-    private String courseParticipantName;
-    private RegistrationStatus registrationStatus;
-    private LocalDate registrationDate;
-
-
-    public CourseRegistrationDto(String courseParticipantName, RegistrationStatus registrationStatus, LocalDate RegistrationDate) {
-        this.courseParticipantName = courseParticipantName;
-        this.registrationStatus = registrationStatus;
-        this.registrationDate = RegistrationDate;
-    }
+public record CourseRegistrationDto(String courseParticipantName,
+                                    RegistrationStatus registrationStatus,
+                                    LocalDate registrationDate) {
 
     public enum RegistrationStatus {
         ENROLLED, CANCELED;
-    }
-
-    public String getCourseParticipantName() {
-        return courseParticipantName;
-    }
-
-    public RegistrationStatus getRegistrationStatus() {
-        return registrationStatus;
-    }
-
-    public LocalDate getRegistrationDate() {
-        return registrationDate;
     }
 }
