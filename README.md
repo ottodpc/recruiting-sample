@@ -8,7 +8,9 @@ For further reference, please consider the following sections:
 ### Description
 Sample course registration app where participants can enroll in a class or cancel an enrollment later on. 
 
-###
+Goal is to make the CourseRegistrationEvaluatorTest pass.
+
+### Java
 Project needs Java 21 to compile and execute. 
 
 Downloads can be found here:
