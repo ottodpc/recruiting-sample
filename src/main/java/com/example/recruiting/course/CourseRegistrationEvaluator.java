@@ -2,6 +2,7 @@ package com.example.recruiting.course;
 
 import com.example.recruiting.course.dto.CourseRegistrationDto;
 import com.example.recruiting.course.dto.CourseRegistrationDto.RegistrationStatus;
+
 import org.apache.commons.lang3.Validate;
 import java.time.LocalDate;
 import java.util.*;
@@ -40,7 +41,9 @@ public class CourseRegistrationEvaluator {
     public static List<String> getAllCurrentValidCourseParticipantNames(
             List<CourseRegistrationDto> registrationEntries) {
 
-        Validate.notNull(registrationEntries, "Registration entries cannot be null");
+        if (registrationEntries == null) {
+            throw new IllegalArgumentException("Registration entries cannot be null");
+        }
 
         if (registrationEntries.isEmpty()) {
             return new ArrayList<>();
